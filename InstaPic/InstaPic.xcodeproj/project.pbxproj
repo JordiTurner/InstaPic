@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		2242DF6730A44106722183C7 /* Pods_InstaPic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EC3404C58304D6F2E160B4 /* Pods_InstaPic.framework */; };
 		EF4A730E1C8654FE00C9E7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A730D1C8654FE00C9E7E2 /* AppDelegate.swift */; };
-		EF4A73101C8654FE00C9E7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A730F1C8654FE00C9E7E2 /* ViewController.swift */; };
 		EF4A73131C8654FE00C9E7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4A73111C8654FE00C9E7E2 /* Main.storyboard */; };
 		EF4A73151C8654FE00C9E7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4A73141C8654FE00C9E7E2 /* Assets.xcassets */; };
 		EF4A73181C8654FE00C9E7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4A73161C8654FE00C9E7E2 /* LaunchScreen.storyboard */; };
 		EF4A73201C8659DC00C9E7E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A731F1C8659DC00C9E7E2 /* LoginViewController.swift */; };
+		EFA0968D1C86704800A8994A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0968C1C86704800A8994A /* MainViewController.swift */; };
+		EFA0968F1C8677DC00A8994A /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA0968E1C8677DC00A8994A /* TimelineViewController.swift */; };
+		EFA096911C8677FF00A8994A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA096901C8677FF00A8994A /* CameraViewController.swift */; };
+		EFA096931C867C5A00A8994A /* UserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA096921C867C5A00A8994A /* UserMedia.swift */; };
+		EFA096951C86813300A8994A /* InstaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA096941C86813300A8994A /* InstaCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +26,16 @@
 		62EC3404C58304D6F2E160B4 /* Pods_InstaPic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaPic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4A730A1C8654FE00C9E7E2 /* InstaPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4A730D1C8654FE00C9E7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF4A730F1C8654FE00C9E7E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF4A73121C8654FE00C9E7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF4A73141C8654FE00C9E7E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4A73171C8654FE00C9E7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF4A73191C8654FE00C9E7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF4A731F1C8659DC00C9E7E2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EFA0968C1C86704800A8994A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EFA0968E1C8677DC00A8994A /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		EFA096901C8677FF00A8994A /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		EFA096921C867C5A00A8994A /* UserMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedia.swift; sourceTree = "<group>"; };
+		EFA096941C86813300A8994A /* InstaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +89,42 @@
 			isa = PBXGroup;
 			children = (
 				EF4A730D1C8654FE00C9E7E2 /* AppDelegate.swift */,
-				EF4A730F1C8654FE00C9E7E2 /* ViewController.swift */,
+				EFA096991C86842B00A8994A /* Models */,
+				EFA0969A1C86844300A8994A /* Views */,
+				EFA096981C86841400A8994A /* ViewControllers */,
 				EF4A73111C8654FE00C9E7E2 /* Main.storyboard */,
 				EF4A73141C8654FE00C9E7E2 /* Assets.xcassets */,
 				EF4A73161C8654FE00C9E7E2 /* LaunchScreen.storyboard */,
 				EF4A73191C8654FE00C9E7E2 /* Info.plist */,
-				EF4A731F1C8659DC00C9E7E2 /* LoginViewController.swift */,
 			);
 			path = InstaPic;
+			sourceTree = "<group>";
+		};
+		EFA096981C86841400A8994A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A731F1C8659DC00C9E7E2 /* LoginViewController.swift */,
+				EFA0968C1C86704800A8994A /* MainViewController.swift */,
+				EFA0968E1C8677DC00A8994A /* TimelineViewController.swift */,
+				EFA096901C8677FF00A8994A /* CameraViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EFA096991C86842B00A8994A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFA096921C867C5A00A8994A /* UserMedia.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EFA0969A1C86844300A8994A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFA096941C86813300A8994A /* InstaCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4A73201C8659DC00C9E7E2 /* LoginViewController.swift in Sources */,
-				EF4A73101C8654FE00C9E7E2 /* ViewController.swift in Sources */,
+				EFA096931C867C5A00A8994A /* UserMedia.swift in Sources */,
+				EFA096911C8677FF00A8994A /* CameraViewController.swift in Sources */,
+				EFA0968F1C8677DC00A8994A /* TimelineViewController.swift in Sources */,
 				EF4A730E1C8654FE00C9E7E2 /* AppDelegate.swift in Sources */,
+				EFA0968D1C86704800A8994A /* MainViewController.swift in Sources */,
+				EFA096951C86813300A8994A /* InstaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

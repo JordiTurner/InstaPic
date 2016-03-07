@@ -27,6 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://mysterious-citadel-96027.herokuapp.com/parse"
             })
         )
+        
+        // check if user is logged in.
+        if PFUser.currentUser() != nil {
+            print("There is a current user")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("tabbarViewController")
+            window?.rootViewController = vc
+        }
+        
         return true
     }
 
